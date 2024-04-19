@@ -132,7 +132,7 @@ export function Signupform() {
               Submit the form or shoot me an email - sheikharbazalam@gmail.com.
             </p>
                 </p>
-                  +91 9987384723
+                  +44 7901188851
                 </p>
               </div>
              
