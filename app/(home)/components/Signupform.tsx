@@ -30,7 +30,7 @@ export function Signupform() {
               </p>
             </header>
    
-      <div className="flex flex-row gap-10 items-center justify-center"> 
+      <div className=" order-first flex flex-col gap-10 items-center justify-center"> 
       <form  method="POST"
           action="https://getform.io/f/c95e71cc-1676-4499-b192-1a041e74c299" className="my-8" >
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
@@ -40,7 +40,7 @@ export function Signupform() {
           </LabelInputContainer>
           <LabelInputContainer>
             <Label htmlFor="lastname">Last name</Label>
-            <Input id="lastname" placeholder="Durden" type="text" />
+            <Input className=" " id="lastname" placeholder="Durden" type="text" />
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
@@ -69,41 +69,11 @@ export function Signupform() {
 
         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" >
 
-        <div className="flex flex-row space-y-4 gap-10">
-          <button
-            className=" relative group/btn flex space-x-2 items-center justify-center px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)] "
-            type="button"
-          >
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              GitHub
-            </span>
-            <BottomGradient />
-          </button>
-          <button
-            className=" relative group/btn flex space-x-2 items-center justify-center px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            type="button"
-          >
-            <IconBrandGoogle className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              Google
-            </span>
-            <BottomGradient />
-          </button>
-          <button
-            className=" relative group/btn flex space-x-2 items-center justify-center px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-gray-50 dark:bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-            type="button"
-          >
-            <IconBrandOnlyfans className="h-4 w-4 text-neutral-800 dark:text-neutral-300" />
-            <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-              OnlyFans
-            </span>
-            <BottomGradient />
-          </button>
-        </div>
+        
         </div>
       </form>
   
-      <div className="md:ml-4">
+      <div className="  order-second  lg:order-none md:ml-4 ">
       <header className="">
               <h1 className="pt-10 text-gray-50 font-semibold text-md">
               For inquiries about my
@@ -118,7 +88,7 @@ export function Signupform() {
             
             </header>
            
-            <div className="icons-container inline-flex flex-col my-20">
+            <div className=" md:order-n icons-container inline-flex flex-col my-10">
               <div className="flex flex-row items-center space-x-6 rounded-md border border-[#02044A] hover:border hover:border-blue-500 p-4">
                 
                 <p className="text-gray-50 font-light text-sm">
