@@ -11,6 +11,15 @@ import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
 
 export default function Project() {
     const projects=[
+         {
+            title: 'DRJD Chat Application',
+            tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs],
+            link: "https://drjd-chat.vercel.app/",
+            view: "https://github.com/sheikharbazalam/drjd-chat",
+            cover: "/chat.png",
+            background: "bg-indigo-500"
+        },
+        
         {
             title: 'Food Recipe Application(drjdfood)',
             tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs],
