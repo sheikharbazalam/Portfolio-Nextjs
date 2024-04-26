@@ -75,7 +75,7 @@ export default function Menubars() {
           <li className="p-5 w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="https://docs.google.com/document/d/1EMIek913BjLcFtaIXfS1Q14xcD_A-7En/edit?usp=sharing&ouid=117832685996644171881&rtpof=true&sd=true"
+              href="https://strath-my.sharepoint.com/:w:/r/personal/sheikh_alam_2022_uni_strath_ac_uk/_layouts/15/doc2.aspx?sourcedoc=%7BC5B04EC6-C846-43D1-BFF9-23D46554D832%7D&file=SheikhArbazAlam_CV%20.docx&action=default&mobileredirect=true&DefaultItemOpen=1&ct=1713912054207&wdOrigin=OFFICECOM-WEB.START.REC&cid=97c7340d-db61-4229-99e1-b3bca051cc2f&wdPreviousSessionSrc=HarmonyWeb&wdPreviousSession=7eca50cb-e8c9-41db-8b22-6d768277b54a"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
