@@ -8,13 +8,16 @@ import food from "../public/food.png";
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { SiTypescript } from "react-icons/si";
+import { SiPusher } from "react-icons/si";
+import { RiSupabaseFill } from "react-icons/ri";
 import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
 
 export default function Project() {
     const projects=[
         {
             title: 'DRJD Chat Application',
-            tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs,SiTypescript],
+            body:"DRJD Chat Application: A real-time chat platform leveraging Next.js authentication and GitHub OAuth for seamless login. Users can engage in text-based conversations with peers, with ongoing enhancements for file sharing capabilities.",
+            tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs,SiTypescript,SiPusher, RiSupabaseFill ],
             link: "https://drjd-chat.vercel.app/",
             view: "https://github.com/sheikharbazalam/drjd-chat",
             cover: "/chat.png",
@@ -22,6 +25,7 @@ export default function Project() {
         },
         {
             title: 'Food Recipe Application(drjdfood)',
+            body:" Utilizing React.js and the Mealdb API, this app offers users a hassle-free experience to explore and discover diverse recipes. Detailed instructions and ingredient lists empower users to create culinary delights effortlessly.",
             tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs,SiTypescript],
             link: "https://drjdfood.netlify.app/",
             view: "https://github.com/sheikharbazalam/Food-APP-Api",
@@ -30,6 +34,7 @@ export default function Project() {
         },
         {
             title: 'Portfolio Web Application(tailwindcss-website)',
+            body:"Crafted with Next.js and adorned with Accernity UI and ShadcnUI, this responsive portfolio showcases design prowess. Users can customize their portfolios or draw inspiration from its sleek design and functionality. ",
             tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs,SiTypescript],
             link: "https://talwind-css-website.vercel.app/",
             view:"https://github.com/sheikharbazalam/talwind-css-website",
@@ -38,6 +43,7 @@ export default function Project() {
         },
         {
             title: 'drjdnews News Web Application',
+            body:" Keeping users informed with the latest news, this app employs React.js and Next.js for dynamic content delivery. Utilizing the NewsAPI, it offers a seamless browsing experience across diverse news categories.",
             tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs],
             link: "http://localhost:3001/",
             view:" https://github.com/sheikharbazalam/news-app-api",
@@ -46,6 +52,7 @@ export default function Project() {
         },
         {
             title: 'Drawing Application',
+            body:" Perfect for artistic expression or digital signatures, this multi-user drawing app employs Next.js and TypeScript, coupled with HTML5 Canvas. Users can collaborate in real-time across different screens, enhancing creativity and interaction.",
             tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs, SiTypescript],
             link: "https://drjddrawing.vercel.app/",
             view: "https://github.com/thespoof-source/Drawing-app-nextjs.git",
@@ -63,7 +70,8 @@ export default function Project() {
                     <div className={cn("p-5 rounded-md", project.background)} key={index}>
                         <DirectionAwareHover imageUrl={project.cover} className='w-full space-y-5 cursor-pointer'>
                             <div className='space-y-5'>
-                                <h1 className='text-2xl font-bold'>{project.title}</h1>
+                                <h1 className='text-2xl font-bold text-white'>{project.title}</h1>
+                                <h1 className='text-md font-semibold'>{project.body}</h1>
                                 <div className='flex items-center gap-5'>
                                     {project.tech.map((Icon, index) => (
                                         <Icon className='w-8 h-8' key={index}/>
