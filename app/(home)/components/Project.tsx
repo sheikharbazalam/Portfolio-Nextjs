@@ -7,22 +7,22 @@ import Titlename from './Titlename';
 import food from "../public/food.png";
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { SiTypescript } from "react-icons/si";
 import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
 
 export default function Project() {
     const projects=[
-         {
+        {
             title: 'DRJD Chat Application',
-            tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs],
+            tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs,SiTypescript],
             link: "https://drjd-chat.vercel.app/",
             view: "https://github.com/sheikharbazalam/drjd-chat",
             cover: "/chat.png",
             background: "bg-indigo-500"
         },
-        
         {
             title: 'Food Recipe Application(drjdfood)',
-            tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs],
+            tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs,SiTypescript],
             link: "https://drjdfood.netlify.app/",
             view: "https://github.com/sheikharbazalam/Food-APP-Api",
             cover: "/food.png",
@@ -30,7 +30,7 @@ export default function Project() {
         },
         {
             title: 'Portfolio Web Application(tailwindcss-website)',
-            tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs],
+            tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs,SiTypescript],
             link: "https://talwind-css-website.vercel.app/",
             view:"https://github.com/sheikharbazalam/talwind-css-website",
             cover: "/tailwind.png",
@@ -46,7 +46,7 @@ export default function Project() {
         },
         {
             title: 'Drawing Application',
-            tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs, ],
+            tech: [RiReactjsFill, SiTailwindcss, TbBrandNextjs, SiTypescript],
             link: "https://drjddrawing.vercel.app/",
             view: "https://github.com/thespoof-source/Drawing-app-nextjs.git",
             cover: "/draw.png",
